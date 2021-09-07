@@ -5,7 +5,8 @@ if __name__ == "__main__":
     download_url = 'http://www.biqukan.com/1_1094/5403177.html'
     # 模仿浏览器发送器请求
     head = {}
-    head['User-Agent'] = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19'
+    head[
+        'User-Agent'] = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19'
     # 构建request
     download_req = request.Request(url=download_url, headers=head)
     # 发送并获取response

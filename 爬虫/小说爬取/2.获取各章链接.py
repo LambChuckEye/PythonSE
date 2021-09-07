@@ -14,7 +14,7 @@ if __name__ == "__main__":
     listmain_soup = BeautifulSoup(target_html, 'lxml')
     # 搜索文档树,找出div标签中class为listmain的所有子标签
     chapters = listmain_soup.find_all('div', class_='listmain')
-    
+
     # 使用查询结果再创建一个BeautifulSoup对象,对其继续进行解析
     download_soup = BeautifulSoup(str(chapters), 'lxml')
     # 开始记录内容标志位,只要正文卷下面的链接,最新章节列表链接剔除

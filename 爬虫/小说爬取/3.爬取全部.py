@@ -61,7 +61,7 @@ if __name__ == "__main__":
                         file.write('\n')
                 file.write('\n\n')
                 # 打印爬取进度
-                sys.stdout.write("\r 已下载:%.3f%%" % (float(index / numbers)*100) )
+                sys.stdout.write("\r 已下载:%.3f%%" % (float(index / numbers) * 100))
                 sys.stdout.flush()
                 index += 1
     file.close()
